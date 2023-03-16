@@ -39,9 +39,34 @@ body {
     left: 25px;
     border-radius: 50%;
     background-color: #050210;
+    animation: pulse 1.5s infinite;
+        
+}
+.circle1 {
+    position:absolute;
+    top: 25px;
+    right: 25px;
+    bottom: 25px;
+    left: 25px;
+    border-radius: 50%;
+    background-color: #000000;
    
+}
 
-    /*ovde sam pokusao da ubacima radijalno zracenje od centra kruga prema periferiji ali mi uvijek nesto fali */
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.01);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+     
 }
 
 .circle span {
